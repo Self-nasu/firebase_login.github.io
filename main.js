@@ -41,7 +41,7 @@
   }
 
   function signInWithOTP() {
-    var phoneNumber = "7877452256"; // Replace with user's phone number
+    var phoneNumber = "+918905924424"; // Replace with user's phone number
     var appVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
     firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
       .then(function(confirmationResult) {
