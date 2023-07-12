@@ -61,3 +61,10 @@
         console.log(error);
       });
   }
+
+
+  // re function
+
+  function redirectToPage(url) {
+    window.location.href = url;
+  }
