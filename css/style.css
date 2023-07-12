@@ -1,11 +1,52 @@
-.project {
+
+#main {
     height: 100vh;
     display: flex;
+    background-color: transparent;
+}
+.main-form {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 1rem;
+    height: 100vh;
+}
+.ph-num {
+    width: 60%;
+    height: 5.5vh;
+}
+.my-btn {
+    width: 60%;
+    justify-content: center;
+    font-size: 1.5rem !important;
 }
 
-#main-form {
-    height: fit-content;
-    border: none;
+#right {
+    margin-left: auto;
+    height: 100vh;
+    width: 32rem;
+    display: flex;
+    background: radial-gradient(circle, rgba(196,218,233,1) 7%, rgba(186,187,230,1) 84%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -3px 0px 4px 0.3px rgba(0, 0, 0, 0.26);
+    border-left: 10px solid blue;
+}
+.h-text {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.main-text {
+    padding-bottom: 0.7vh;
+}
+.down-text {
+    padding-top: 0.5vh;
+    border-top: 1px solid gray;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

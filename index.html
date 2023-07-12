@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase Login</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/mainlogo.png" type="image/png">
 
     <section> <!-- firebase linking -->
         <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
@@ -22,7 +22,7 @@
 </head>
 <body class="body">
     
-    <section class="project">
+    <!-- <section class="project">
         <div id="main-form" class="container card text-center">
             <div class="card-body">
               <h5 class="card-title">LOG IN / SIGN UP</h5>
@@ -36,7 +36,32 @@
             </div>
         </div>
         <div id="recaptcha-container"></div>
+    </section> -->
+
+
+    <section id="main" class="container-fluid">
+        <div id="left" class="container-fluid"> <!-- left side area -->
+            <div class="main-form container">
+                <input id="ph-num" type="tel" class="ph-num" placeholder="Your phone number">
+                <a onclick="signInWithOTP()" class="btn btn-secondary my-btn"><i class="bi bi-phone me-2"></i> Get OTP</a>
+                <a onclick="signInWithGoogle()" class="btn btn-primary my-btn"><i class="bi bi-google me-2"></i> Google</a>
+                <a onclick="signInWithFacebook()" class="btn btn-primary my-btn"><i class="bi bi-facebook me-2"></i> Facebook</a>
+                <a onclick="signInWithGitHub()" class="btn btn-primary my-btn"><i class="bi bi-github me-2"></i> GitHub</a>
+                <div id="recaptcha-container"></div>
+            </div>
+        </div>
+
+        <div id="right" class="container-fluid"> <!-- right side area -->
+            <div class="container heading">
+                <a class="h1 h-text text-dark main-text">LogIn or SignUp</a>
+                <a class="h-text text-dark down-text">Vsit nasu.live by LogIn or SignUp</a>
+            </div>
+            <div class="container img">
+                <img src="img/mainlogo.png" alt="weblogo">
+            </div>
+        </div>
     </section>
+
     
 
     <script src="firebase.js"></script>

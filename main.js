@@ -20,6 +20,7 @@
         // Handle successful login
         var user = result.user;
         console.log(user);
+        redirectToPage('https://nasu.live');
       })
       .catch(function(error) {
         // Handle error
@@ -34,6 +35,7 @@
         // Handle successful login
         var user = result.user;
         console.log(user);
+        redirectToPage('https://nasu.live');
       })
       .catch(function(error) {
         // Handle error
@@ -42,7 +44,9 @@
   }
 
   function signInWithOTP() {
-    var phoneNumber = "+918905924424"; // Replace with user's phone number
+    var num = document.getElementById('ph-num').value;
+    var phoneNumber = "+91" + num; // Replace with user's phone number
+    console.log(phoneNumber);
     var appVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
     firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
       .then(function(confirmationResult) {
