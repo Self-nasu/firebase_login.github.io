@@ -5,6 +5,7 @@
         // Handle successful login
         var user = result.user;
         console.log(user);
+        redirectToPage('https://nasu.live');
       })
       .catch(function(error) {
         // Handle error
@@ -53,6 +54,7 @@
         // Handle successful OTP login
         var user = result.user;
         console.log(user);
+        redirectToPage('https://nasu.live');
       })
       .catch(function(error) {
         // Handle error
