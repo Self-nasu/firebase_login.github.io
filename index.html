@@ -39,8 +39,14 @@
     </section> -->
 
 
-    <section id="main" class="container-fluid">
+    <section id="main">
         <div id="left" class="container-fluid"> <!-- left side area -->
+
+            <div class="container heading mt-4">
+                <a class="h2 h-text text-dark main-text">Code Clause Internship</a>
+                <a class="h-text text-dark down-text">Login using Google, facebook, github, otp authentication using firebase</a>
+            </div>
+
             <div class="main-form container">
                 <input id="ph-num" type="tel" class="ph-num" placeholder="Your phone number">
                 <a onclick="signInWithOTP()" class="btn btn-secondary my-btn"><i class="bi bi-phone me-2"></i> Get OTP</a>
@@ -62,7 +68,19 @@
         </div>
     </section>
 
-    
+    <div class="container-fluid fixed-bottom bg-dark">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-2">
+          <p class="col-md-4 mb-0 text-light">Made By Naman Jain(nasu).</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="https://github.com/Self-nasu/firebase_login.github.io" class="nav-link px-2 text-light"><i class="bi bi-github"></i></a></li>
+          </ul>
+        </footer>
+      </div>
 
     <script src="firebase.js"></script>
     <script src="main.js"></script>
